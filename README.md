@@ -1,66 +1,78 @@
-# Personal Finance Companion
+# 💰 FinanceApp - Personal Finance Companion
 
-A clean, intuitive, and production-ready Personal Finance Tracker built with modern Android technologies.
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-1.5+-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
+[![Material 3](https://img.shields.io/badge/Material_3-Modern-757575?style=for-the-badge&logo=materialdesign&logoColor=white)](https://m3.material.io/)
+[![Architecture](https://img.shields.io/badge/Architecture-MVVM-green?style=for-the-badge)](https://developer.android.com/topic/architecture)
 
-## 🚀 Features
-
-- **Dashboard**: High-level overview of current balance, total income, and total expenses.
-- **Transaction Management**: 
-    - Track Income and Expenses.
-    - Categorize transactions for better organization.
-    - Search through transaction history.
-- **Savings Goals**:
-    - Set a monthly savings target.
-    - Visual progress tracking with motivational feedback.
-- **Spending Insights**:
-    - Visual breakdown of spending by category.
-    - Percentage-based analysis of expenses.
-- **Modern UI/UX**:
-    - Built with Material 3.
-    - Supports Dark Mode (Dynamic).
-    - Smooth navigation and subtle animations.
-
-## 🛠 Tech Stack
-
-- **Platform**: Android
-- **Language**: [Kotlin](https://kotlinlang.org/)
-- **UI Framework**: [Jetpack Compose](https://developer.android.com/jetpack/compose)
-- **Architecture**: MVVM (Model-View-ViewModel) + Repository Pattern
-- **Database**: [Room](https://developer.android.com/training/data-storage/room) for local persistence
-- **Navigation**: [Jetpack Navigation Compose](https://developer.android.com/jetpack/compose/navigation)
-- **Dependency Management**: Gradle Version Catalog (libs.versions.toml)
-
-## 🏗 Architecture
-
-The app follows **Clean Architecture** principles:
-- **ui/**: Compose screens, components, and theme.
-- **viewmodel/**: UI logic and state management using `StateFlow`.
-- **data/**: Local database (Room), Entities, DAOs, and the Repository layer.
-
-## 📸 Screenshots
-*(Placeholders - Add actual screenshots here)*
-- [Home Dashboard]
-- [Add Transaction]
-- [Savings Goals]
-- [Insights]
-
-## 🛠 Setup Instructions
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/finance-app.git
-   ```
-2. **Open in Android Studio**:
-   Use Android Studio Ladybug or newer for best compatibility.
-3. **Sync Gradle**:
-   Wait for the project to sync dependencies.
-4. **Run the App**:
-   Select an emulator or physical device (min SDK 24) and click "Run".
-
-## 📝 Assumptions & Notes
-- The app uses a local SQLite database (Room), so data is persisted on the device.
-- Monthly goals are currently tracked per calendar month.
-- Currency formatting is automatically handled based on the device's locale.
+**FinanceApp** is a lightweight and intuitive mobile application designed to help you master your daily money habits. It transforms the often-stressful task of expense tracking into a simple, engaging, and personal experience.
 
 ---
-*Built with ❤️ for better financial health.*
+
+## ❓ Problem Statement
+
+In today's fast-paced world, many individuals find it difficult to:
+*   **Track small daily expenses** that often go unrecorded in traditional banking apps.
+*   **Visualize spending patterns** without complex spreadsheets.
+*   **Stay motivated** to reach monthly savings targets.
+*   **Understand financial health** at a single glance.
+
+## ✨ The Solution
+
+FinanceApp provides a **personal, structured, and mobile-first** approach to finance:
+*   **Immediate Clarity**: A clean dashboard showing Balance, Income, and Expenses.
+*   **Effortless Logging**: Quick entry for transactions with categories, dates, and notes.
+*   **Visual Wisdom**: Charts and insights that turn raw data into actionable knowledge.
+*   **Goal-Oriented**: A dedicated space to set and track savings milestones.
+
+---
+
+## 🗺️ Project Flow
+
+1.  **Dashboard (Home)** 🏠: The entry point where users view their Total Balance, Income, Expenses, and a Weekly Trend chart.
+2.  **Transaction Tracking** 💸: Users record daily transactions. They can filter by type, search for specific notes, and swipe to delete entries.
+3.  **Edit/Add Flow** ✍️: A dedicated screen with a Date Picker and Category selector to ensure data accuracy.
+4.  **Savings Goals** 🎯: Users set a monthly target. The app calculates actual savings in real-time and provides a progress bar.
+5.  **Insights** 📊: A visual breakdown (Pie Chart) showing the highest spending categories and percentage-based distribution.
+
+---
+
+## 🏗️ Architecture & Engineering
+
+The project is built using a **Clean Architecture** approach with the **MVVM (Model-View-ViewModel)** pattern:
+
+### 층 Layer Breakdown:
+*   **UI Layer (Jetpack Compose)**: Stateless UI components that react to state changes. 
+*   **ViewModel (StateFlow)**: Manages UI state, handles user intent, and ensures data survives configuration changes.
+*   **Repository Pattern**: A single source of truth that abstracts the data sources from the UI.
+*   **Data Layer (Room DB)**: Local SQLite persistence ensuring the app works flawlessly **offline**.
+
+### 🛠️ Tech Stack:
+*   **Language**: Kotlin (Coroutines + Flow)
+*   **UI**: Jetpack Compose (Material 3 Design)
+*   **Navigation**: Jetpack Navigation Compose
+*   **Local Storage**: Room Persistence Library
+*   **Visuals**: Custom Canvas-based Charts (Bar & Pie)
+*   **Theme**: Dynamic Light/Dark mode support
+
+---
+
+## 🎨 Design Language
+
+*   **Color Palette**: Vibrant Primary Indigo for branding, Emerald Green for Income, and Vivid Red for Expenses.
+*   **Typography**: Clean, sans-serif fonts for high legibility on small screens.
+*   **Interactions**: 
+    *   **Swipe-to-Delete**: Intuitive list management.
+    *   **Segmented Controls**: Easy switching between transaction types.
+    *   **Haptic Visuals**: Color-coded feedback for progress and status.
+
+---
+
+## 🚀 Getting Started
+
+1.  **Clone the Repo**: `git clone https://github.com/yourusername/financeapp.git`
+2.  **Open in Android Studio**: (Ladybug 2024.2.1 or newer recommended)
+3.  **Build & Run**: Supports Android 7.0 (API 24) and above.
+
+---
+*Built with ❤️ to make finance simple.*

@@ -45,7 +45,7 @@ The project is built using a **Clean Architecture** approach with the **MVVM (Mo
 *   **UI Layer (Jetpack Compose)**: Stateless UI components that react to state changes. 
 *   **ViewModel (StateFlow)**: Manages UI state, handles user intent, and ensures data survives configuration changes.
 *   **Repository Pattern**: A single source of truth that abstracts the data sources from the UI.
-*   **Data Layer (Room DB)**: Local SQLite persistence ensuring the app works flawlessly **offline**.
+*   **Data Layer (Room DB)**: Local SQLite persistence ensuring the app works flawlessly offline.
 
 ### 🛠️ Tech Stack:
 *   **Language**: Kotlin (Coroutines + Flow)
@@ -70,9 +70,21 @@ The project is built using a **Clean Architecture** approach with the **MVVM (Mo
 
 ## 🚀 Getting Started
 
-1.  **Clone the Repo**: `git clone https://github.com/yourusername/financeapp.git`
+1.  **Clone the Repo**: `git clone https://github.com/ayush-ranjan9135/financeapp.git`
 2.  **Open in Android Studio**: (Ladybug 2024.2.1 or newer recommended)
 3.  **Build & Run**: Supports Android 7.0 (API 24) and above.
 
 ---
-*Built with ❤️ to make finance simple.*
+
+## 🤝 Connect with Me
+
+I'd love to hear your feedback or discuss potential collaborations!
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Check%20it%20out-blue?style=for-the-badge&logo=vercel)](https://alpha-portfolio-five.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ayush%20Ranjan-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ayush-ranjan-9135d3/)
+[![GitHub](https://img.shields.io/badge/GitHub-ayush--ranjan9135-black?style=for-the-badge&logo=github)](https://github.com/ayush-ranjan9135)
+[![Instagram](https://img.shields.io/badge/Instagram-ayush.__.srivastava-E4405F?style=for-the-badge&logo=instagram)](https://www.instagram.com/ayush.__.srivastava?igsh=dW1zdHFjcTZnenV2)
+[![Facebook](https://img.shields.io/badge/Facebook-Ayush%20Ranjan-1877F2?style=for-the-badge&logo=facebook)](https://www.facebook.com/share/1AhB4q1WeW/)
+
+---
+*Built with ❤️ by Ayush Ranjan.*
